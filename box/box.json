@@ -4,7 +4,7 @@
 	"name": "Colored Box",
 	"description": "Box",
 	"newInstancePrefix": "Box",
-	"icon": "https://db-off.github.io/customwidgets/box/icon.png",
+	"icon": "https://DB-Off.github.io/SAC---Customwidgets/box/icon.png",
 	"vendor": "Sample",
 	"eula": "",
 	"license": "",
@@ -12,21 +12,21 @@
 		{
 			"kind": "main",
 			"tag": "com-sample-box",
-			"url": "https://db-off.github.io/customwidgets/box/box.js",
+			"url": "https://DB-Off.github.io/SAC---Customwidgets/box/box.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
 			"tag": "com-sample-box-styling",
-			"url": "https://db-off.github.io/customwidgets/box/box_styling.js",
+			"url": "https://DB-Off.github.io/SAC---Customwidgets/box/box_styling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
 			"tag": "com-sample-box-builder",
-			"url": "https://db-off.github.io/customwidgets/box/box_builder.js",
+			"url": "https://DB-Off.github.io/SAC---Customwidgets/box/box_builder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}

@@ -26,7 +26,7 @@
 		{
 			"kind": "builder",
 			"tag": "com-sample-box-builder",
-			"url": ""https://DB-Off.github.io/SAC---Customwidgets/gaugebox/box_builder.js",
+			"url": "https://DB-Off.github.io/SAC---Customwidgets/gaugebox/box_builder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}

@@ -7,7 +7,7 @@
 				<table>
 					<tr>
 						<td>Color</td>
-						<td><input id="bps_color" type="text" size="10" maxlength="10"></td>
+						<td><input id="builder_color" type="text" size="10" maxlength="10"></td>
 					</tr>
 				</table>
 				<input type="submit" style="display:none;">
@@ -21,7 +21,7 @@
 		</style>
 	`;
 
-	class BoxBps extends HTMLElement {
+	class BoxBuilderPanel extends HTMLElement {
 		constructor() {
 			super();
 			this._shadowRoot = this.attachShadow({mode: "open"});
@@ -41,13 +41,13 @@
 		}
 
 		set color(newColor) {
-			this._shadowRoot.getElementById("bps_color").value = newColor;
+			this._shadowRoot.getElementById("builder_color").value = newColor;
 		}
 
 		get color() {
-			return this._shadowRoot.getElementById("bps_color").value;
+			return this._shadowRoot.getElementById("builder_color").value;
 		}
 	}
 
-	customElements.define("com-demo-box-bps", BoxBps);
+	customElements.define("com-sample-box-builder", BoxBuilderPanel);
 })();

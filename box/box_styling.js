@@ -29,7 +29,6 @@
 					detail: {
 						properties: {
 							color: this.color
-							opacity: this.opacity
 						}
 					}
 			}));
@@ -48,4 +47,5 @@
 if (!customElements.get("com-sample-box-styling")) {
 	customElements.define("com-sample-box-styling", BoxStylingPanel);
 }
+
 

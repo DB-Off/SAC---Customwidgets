@@ -1,6 +1,6 @@
 (function()  {
 	let template = document.createElement("template");
-	template.innerHTML = `
+	template.innerHTML = 
 		<form id="form">
 			<fieldset>
 				<legend>Box Properties</legend>
@@ -19,7 +19,7 @@
 			padding: 1em 1em 1em 1em;
 		}
 		</style>
-	`;
+	;
 
 	class BoxBuilderPanel extends HTMLElement {
 		constructor() {
@@ -49,9 +49,5 @@
 		}
 	}
 
-	if (!customElements.get("com-sample-box-builder")) {
 	customElements.define("com-sample-box-builder", BoxBuilderPanel);
-}
-
 })();
-

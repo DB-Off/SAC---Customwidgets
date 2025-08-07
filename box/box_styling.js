@@ -44,8 +44,8 @@
 	}
 
 
-if (!customElements.get("com-sample-box-styling")) {
-	customElements.define("com-sample-box-styling", BoxStylingPanel);
+customElements.define("com-sample-box-styling", BoxStylingPanel);
 }
+
 
 

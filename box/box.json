@@ -32,15 +32,15 @@
 		}
 	],
 	"properties": {
-		"color": {
-			"type": "string",
-			"description": "Background color",
-			"default": "red"
-		},
 		"opacity": {
 			"type": "number",
 			"description": "Opacity",
 			"default": 1
+		},
+		"color": {
+			"type": "string",
+			"description": "Background color",
+			"default": "red"
 		},
 		"width": {
 			"type": "integer",
@@ -77,3 +77,4 @@
 }
 
  
+

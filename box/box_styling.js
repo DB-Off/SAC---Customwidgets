@@ -9,10 +9,6 @@
 						<td>Color</td>
 						<td><input id="styling_color" type="text" size="40" maxlength="40"></td>
 					</tr>
-     					<tr>
-	  					<td>Opacity</td>
-            					<td><input id="styling_opacity" type="text" size="5" maxlength="5"></td>
-          				</tr>
 				</table>
 				<input type="submit" style="display:none;">
 			</fieldset>
@@ -33,7 +29,6 @@
 					detail: {
 						properties: {
 							color: this.color
-							opacity: this.opacity
 						}
 					}
 			}));
@@ -58,6 +53,7 @@
 
 customElements.define("com-sample-box-styling", BoxStylingPanel);
 }
+
 
 
 

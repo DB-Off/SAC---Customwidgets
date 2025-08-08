@@ -17,13 +17,6 @@
 			"ignoreIntegrity": true
 		},
 		{
-			"kind": "styling",
-			"tag": "com-sample-box-styling",
-			"url": "https://DB-Off.github.io/SAC---Customwidgets/box/box_styling.js",
-			"integrity": "",
-			"ignoreIntegrity": true
-		},
-		{
 			"kind": "builder",
 			"tag": "com-sample-box-builder",
 			"url": "https://DB-Off.github.io/SAC---Customwidgets/box/box_builder.js",
@@ -75,3 +68,4 @@
 		}
 	}
 }
+

@@ -38,8 +38,8 @@
 		}
 
 		onCustomWidgetAfterUpdate(changedProperties) {
-			if ("opacity" in changedProperties) {
-			this._shadowRoot.querySelector(".box").style.opacity = changedProperties["opacity"];
+			if (changedProperties.includes("color") || changedProperties.includes("opacity")) {
+				this._shadowRoot.querySelector(".box").style.backgroundColor = this.hexToRgba(this.color, this.opacity);
 			}
 			
 		}
@@ -47,6 +47,7 @@
 
 	customElements.define("com-sample-box", Box);
 })();
+
 
 
 

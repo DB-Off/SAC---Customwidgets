@@ -25,11 +25,6 @@
 		}
 	],
 	"properties": {
-		"color": {
-			"type": "string",
-			"description": "Background color",
-			"default": "red"
-		},
 		"opacity": {
 			"type": "number",
 			"description": "Opacity",
@@ -68,6 +63,7 @@
 		}
 	}
 }
+
 
 
 

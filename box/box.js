@@ -20,20 +20,16 @@
 			super(); 
 			this._shadowRoot = this.attachShadow({ mode: "open" });
 			this._shadowRoot.appendChild(template.content.cloneNode(true));
-			this.color = "red";
-			this.addEventListener("click", event => {
-				var event = new Event("onClick");
-				this.dispatchEvent(event);
-			});
+			this.color = "red"; // default color
 			this._props = {};
 		}
-		setColor(newColor) {
-		this.color = newColor;
-		this.style.backgroundColor = newColor;
+		 setColor(newColor) {
+			 this.color = newColor;
+			 this._shadowRoot.querySelector(".box").style.backgroundColor = newColor;
 	}
 
-	getColor() {
-		return this.color;
+	 getColor() {
+		 return this.color;
 	}
 
 		onCustomWidgetBeforeUpdate(changedProperties) {
@@ -42,7 +38,7 @@
 
 		onCustomWidgetAfterUpdate(changedProperties) {
 			if ("opacity" in changedProperties) {
-			this.style.opacity = changedProperties["opacity"];
+			this._shadowRoot.querySelector(".box").style.opacity = changedProperties["opacity"];
 			}
 			
 		}
@@ -50,6 +46,7 @@
 
 	customElements.define("com-sample-box", Box);
 })();
+
 
 
 

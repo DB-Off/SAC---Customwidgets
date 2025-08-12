@@ -49,12 +49,12 @@
 					"description": "The new background color"
 				}
 			],
-			"body": "this.color = newColor;"
+			"body": "this.setColor(newColor);"
 		},
 		"getColor": {
 			"returnType": "string",
 			"description": "Returns the background color.",
-			"body": "return this.color;"
+			"body": "return this.getColor();"
 		}
 	},
 	"events": {
@@ -63,6 +63,7 @@
 		}
 	}
 }
+
 
 
 

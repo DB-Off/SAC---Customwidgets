@@ -56,6 +56,14 @@
 			"description": "Returns the background color.",
 			"body": "return this.getColor();"
 		}
+		"setOpacity": {
+			"parameters": ["opacity"],
+			"body": "this.opacity = opacity;
+		},
+		"getOpacity": {
+			"parameters": [],
+			"body": "return this.opacity;"
+		}
 	},
 	"events": {
 		"onClick": {
@@ -63,6 +71,7 @@
 		}
 	}
 }
+
 
 
 

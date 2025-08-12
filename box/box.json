@@ -21,7 +21,7 @@
 			"tag": "com-sample-box-styling",
 			"url": "https://DB-Off.github.io/SAC---Customwidgets/box/box_styling.js",
 			"integrity": "",
-			"ignoreIntegrity": true
+			"ignoreIntegrity": true,
 			"_comment": "Disabled styling panel so SAC won't show the color picker"
 		},
 		{
@@ -76,6 +76,7 @@
 		}
 	}
 }
+
 
 
 

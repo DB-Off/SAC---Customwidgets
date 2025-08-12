@@ -29,14 +29,16 @@
 		}
 
 		onCustomWidgetAfterUpdate(changedProperties) {
-			if ("color" in changedProperties) {
-				this.style["background-color"] = changedProperties["color"];
-			}
 			if ("opacity" in changedProperties) {
 				this.style["opacity"] = changedProperties["opacity"];
+			}
+			
+			if ("color" in changedProperties) {
+				this.style["background-color"] = changedProperties["color"];
 			}
 		}
 	}
 
 	customElements.define("com-sample-box", Box);
 })();
+

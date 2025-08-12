@@ -58,7 +58,7 @@
 		}
 		"setOpacity": {
 			"parameters": ["opacity"],
-			"body": "this.opacity = opacity;
+			"body": "this.opacity = opacity;"
 		},
 		"getOpacity": {
 			"parameters": [],
@@ -71,6 +71,7 @@
 		}
 	}
 }
+
 
 
 

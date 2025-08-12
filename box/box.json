@@ -57,7 +57,13 @@
 			"body": "return this.getColor();"
 		},
 		"setOpacity": {
-			"parameters": ["opacity"],
+			"parameters": [
+				{
+					"name": "opacity",
+					"type": "number",
+					"description": "The opacity value (0 to 1)"
+				}
+			],
 			"body": "this.opacity = opacity;"
 		},
 		"getOpacity": {
@@ -71,6 +77,7 @@
 		}
 	}
 }
+
 
 
 

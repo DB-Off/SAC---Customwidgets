@@ -17,14 +17,6 @@
 			"ignoreIntegrity": true
 		},
 		{
-			"_disabled_kind": "styling",
-			"tag": "com-sample-box-styling",
-			"url": "https://DB-Off.github.io/SAC---Customwidgets/box/box_styling.js",
-			"integrity": "",
-			"ignoreIntegrity": true,
-			"_comment": "Disabled styling panel so SAC won't show the color picker"
-		},
-		{
 			"kind": "builder",
 			"tag": "com-sample-box-builder",
 			"url": "https://DB-Off.github.io/SAC---Customwidgets/box/box_builder.js",
@@ -76,6 +68,7 @@
 		}
 	}
 }
+
 
 
 

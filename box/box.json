@@ -59,12 +59,18 @@
 		"setOpacity": {
 			"parameters": [
 				{
-					"name": "opacity",
-					"type": "number",
-					"description": "The opacity value (0 to 1)"
+					"name": "options",
+					"type": "object",
+					"description": "Opacity settings",
+					"properties": {
+						"opacity": {
+							"type": "number",
+							"description": "The opacity value (0 to 1)"
+						}
+					}
 				}
 			],
-			"body": "this.opacity = opacity;"
+			"body": "this.opacity = options.opacity;"
 		},
 		"getOpacity": {
 			"parameters": [],
@@ -77,6 +83,7 @@
 		}
 	}
 }
+
 
 
 

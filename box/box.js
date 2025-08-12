@@ -42,7 +42,7 @@
 
 		onCustomWidgetAfterUpdate(changedProperties) {
 			if ("opacity" in changedProperties) {
-				this._shadowRoot.querySelector(".box").style.opacity = changedProperties["opacity"];
+			this.style.opacity = changedProperties["opacity"];
 			}
 			
 		}
@@ -50,6 +50,7 @@
 
 	customElements.define("com-sample-box", Box);
 })();
+
 
 
 

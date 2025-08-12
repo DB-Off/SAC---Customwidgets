@@ -2,7 +2,7 @@
 	let template = document.createElement("template");
 	template.innerHTML = `
 		<style>
-		:host {
+		.box {
 			border-radius: 25px;
 			border-width: 4px;
 			border-color: black;
@@ -12,6 +12,7 @@
 			opacity: 1; 
 		} 
 		</style> 
+  		<div class="box"></div>
 	`;
 
 	class Box extends HTMLElement {
@@ -40,5 +41,6 @@
 
 	customElements.define("com-sample-box", Box);
 })();
+
 
 

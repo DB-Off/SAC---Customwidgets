@@ -20,7 +20,8 @@
 			super(); 
 			this._shadowRoot = this.attachShadow({ mode: "open" });
 			this._shadowRoot.appendChild(template.content.cloneNode(true));
-			this.color = "red"; // default color
+			this.color = "#3498db"; // default color
+			this.opacity = 1; // default color
 			this._props = {};
 		}
 		 setColor(newColor) {
@@ -46,6 +47,7 @@
 
 	customElements.define("com-sample-box", Box);
 })();
+
 
 
 

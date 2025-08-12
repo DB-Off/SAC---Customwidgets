@@ -34,7 +34,7 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							opacity: 0.5;
+							opacity: parseFloat(this.opacity) || 0.5
 						}
 					}
 			}));
@@ -53,5 +53,6 @@
 	customElements.define("com-sample-box-builder", BoxBuilderPanel);
 }
 })();
+
 
 

@@ -20,12 +20,21 @@
 			super(); 
 			this._shadowRoot = this.attachShadow({ mode: "open" });
 			this._shadowRoot.appendChild(template.content.cloneNode(true));
+			this.color = "red";
 			this.addEventListener("click", event => {
 				var event = new Event("onClick");
 				this.dispatchEvent(event);
 			});
 			this._props = {};
 		}
+		setColor(newColor) {
+		this.color = newColor;
+		this.style.backgroundColor = newColor;
+	}
+
+	getColor() {
+		return this.color;
+	}
 
 		onCustomWidgetBeforeUpdate(changedProperties) {
 			this._props = { ...this._props, ...changedProperties };
@@ -41,6 +50,7 @@
 
 	customElements.define("com-sample-box", Box);
 })();
+
 
 
 

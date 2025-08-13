@@ -34,7 +34,7 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							opacity: parseFloat(this.opacity) || 0.5
+							opacity: this.opacity
 						}
 					}
 			}));
@@ -49,10 +49,5 @@
 		}
 	}
 
-	if (!customElements.get("com-sample-box-builder")) {
 	customElements.define("com-sample-box-builder", BoxBuilderPanel);
-}
 })();
-
-
-

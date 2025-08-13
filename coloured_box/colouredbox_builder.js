@@ -40,16 +40,17 @@
 			}));
 		}
 
-		set opacity(newOpacity) {
-			this._shadowRoot.getElementById("builder_opacity").value = newOpacity;
+		set color(val) {
+			this._shadow.getElementById("builder_color").value = val;
 		}
 
-		get opacity() {
-			return this._shadowRoot.getElementById("builder_opacity").value;
+		get color() {
+			return this._shadow.getElementById("builder_color").value;
 		}
 	}
 
 	  if (!customElements.get("com-sample-box-builder")) {
     customElements.define("com-sample-box-builder", BoxBuilderPanel);
 })();
+
 

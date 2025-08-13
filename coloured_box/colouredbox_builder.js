@@ -41,17 +41,18 @@
 		}
 
 		set color(val) {
-			this._shadow.getElementById("builder_color").value = val;
+			this._shadowRoot.getElementById("builder_color").value = val;
 		}
 
 		get color() {
-			return this._shadow.getElementById("builder_color").value;
+			return this._shadowRoot.getElementById("builder_color").value;
 		}
 	}
 
 	  if (!customElements.get("com-sample-box-builder")) {
     customElements.define("com-sample-box-builder", BoxBuilderPanel);
 })();
+
 
 
 

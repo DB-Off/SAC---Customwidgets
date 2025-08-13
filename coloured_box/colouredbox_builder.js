@@ -49,5 +49,7 @@
 		}
 	}
 
-	customElements.define("com-sample-box-builder", BoxBuilderPanel);
+	  if (!customElements.get("com-sample-box-builder")) {
+    customElements.define("com-sample-box-builder", BoxBuilderPanel);
 })();
+

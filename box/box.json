@@ -1,5 +1,5 @@
 {
-	"id": "com.sample.box.opacity",
+	"id": "com.sample.box",
 	"version": "1.0.0",
 	"name": "Colored Box",
 	"description": "Box",
@@ -17,6 +17,13 @@
 			"ignoreIntegrity": true
 		},
 		{
+			"kind": "styling",
+			"tag": "com-sample-box-styling",
+			"url": "https://DB-Off.github.io/SAC---Customwidgets/box/box_styling.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
 			"kind": "builder",
 			"tag": "com-sample-box-builder",
 			"url": "https://DB-Off.github.io/SAC---Customwidgets/box/box_builder.js",
@@ -25,10 +32,15 @@
 		}
 	],
 	"properties": {
+		"color": {
+			"type": "string",
+			"description": "Background color",
+			"default": "red"
+		},
 		"opacity": {
 			"type": "number",
 			"description": "Opacity",
-			"default": 0.5
+			"default": 1
 		},
 		"width": {
 			"type": "integer",
@@ -49,32 +61,12 @@
 					"description": "The new background color"
 				}
 			],
-			"body": "this.setColor(newColor);"
+			"body": "this.color = newColor;"
 		},
 		"getColor": {
 			"returnType": "string",
 			"description": "Returns the background color.",
-			"body": "return this.getColor();"
-		},
-		"setOpacity": {
-			"parameters": [
-				{
-					"name": "options",
-					"type": "object",
-					"description": "Opacity settings",
-					"properties": {
-						"opacity": {
-							"type": "number",
-							"description": "The opacity value (0 to 1)"
-						}
-					}
-				}
-			],
-			"body": "this.opacity = options.opacity;"
-		},
-		"getOpacity": {
-			"parameters": [],
-			"body": "return this.opacity;"
+			"body": "return this.color;"
 		}
 	},
 	"events": {
@@ -83,18 +75,3 @@
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -6,8 +6,8 @@
 				<legend>Box Properties</legend>
 				<table>
 					<tr>
-						<td>Opacity</td>
-						<td><input id="builder_opacity" type="text" size="5" maxlength="5"></td>
+						<td>Colour</td>
+						<td><input id="builder_color" type="text" size="5" maxlength="5"></td>
 					</tr>
 				</table>
 				<input type="submit" style="display:none;">
@@ -34,7 +34,7 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							opacity: this.opacity
+							color: this.color
 						}
 					}
 			}));
@@ -52,5 +52,6 @@
 	  if (!customElements.get("com-sample-box-builder")) {
     customElements.define("com-sample-box-builder", BoxBuilderPanel);
 })();
+
 
 

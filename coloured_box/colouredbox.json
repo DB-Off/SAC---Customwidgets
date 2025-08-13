@@ -19,7 +19,7 @@
 		{
 			"kind": "styling",
 			"tag": "com-sample-box-styling",
-			"url": "https://www.sample.com/customwidgets/coloured_box/colouredbox_styling.js",
+			"url": "https://DB-Off.github.io/SAC---Customwidgets/coloured_box/colouredbox_styling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
@@ -77,3 +77,4 @@
 }
 
  
+

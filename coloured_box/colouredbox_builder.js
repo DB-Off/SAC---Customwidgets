@@ -7,7 +7,7 @@
 				<table>
 					<tr>
 						<td>Colour</td>
-						<td><input id="builder_color" type="text" size="5" maxlength="5"></td>
+						<td><input id="builder_color" type="text" size="40" maxlength="40"></td>
 					</tr>
 				</table>
 				<input type="submit" style="display:none;">
@@ -52,6 +52,7 @@
 	  if (!customElements.get("com-sample-box-builder")) {
     customElements.define("com-sample-box-builder", BoxBuilderPanel);
 })();
+
 
 
 

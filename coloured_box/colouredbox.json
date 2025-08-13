@@ -17,13 +17,6 @@
 			"ignoreIntegrity": true
 		},
 		{
-			"kind": "styling",
-			"tag": "com-sample-box-styling",
-			"url": "https://DB-Off.github.io/SAC---Customwidgets/coloured_box/colouredbox_styling.js",
-			"integrity": "",
-			"ignoreIntegrity": true
-		},
-		{
 			"kind": "builder",
 			"tag": "com-sample-box-builder",
 			"url": "https://DB-Off.github.io/SAC---Customwidgets/coloured_box/colouredbox_builder.js",
@@ -77,4 +70,5 @@
 }
 
  
+
 
